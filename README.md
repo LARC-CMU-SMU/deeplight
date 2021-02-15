@@ -11,7 +11,7 @@ Vu Tran, Gihan Jayatilaka, Ashwin Ashok and Archan Misra, 2021, April. *Deepligh
 ## System architecture
 ![System architecture](./documentation/system-architecture.png)
 
-#Cite
+# Cite
 
 You may cite this work as per the following bibitex.
 ```
