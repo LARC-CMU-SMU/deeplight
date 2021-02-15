@@ -5,8 +5,11 @@ This repository is the authors' implementation of the following paper.
 Vu Tran, Gihan Jayatilaka, Ashwin Ashok and Archan Misra, 2021, April. *Deeplight : Robust & Unobtrusive Real-time Screen-Camera Communication for Real-World Displays*. In 2021 20th ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN) (). IEEE.
 
 
+## Overview diagram
+![Deeplight overview](./documentation/overview.png)
 
-
+## System architecture
+![System architecture](./documentation/system-architecture.png)
 
 ```
 @InProceedings{Tran2021IPSN,
