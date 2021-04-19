@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		493CCA182495297000FD1BB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 493CCA172495297000FD1BB3 /* AppDelegate.m */; };
+		493CCA1B2495297000FD1BB3 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 493CCA1A2495297000FD1BB3 /* SceneDelegate.m */; };
+		493CCA1E2495297000FD1BB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493CCA1D2495297000FD1BB3 /* ViewController.m */; };
+		493CCA212495297000FD1BB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493CCA1F2495297000FD1BB3 /* Main.storyboard */; };
+		493CCA232495297600FD1BB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 493CCA222495297600FD1BB3 /* Assets.xcassets */; };
+		493CCA262495297600FD1BB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493CCA242495297600FD1BB3 /* LaunchScreen.storyboard */; };
+		493CCA292495297600FD1BB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 493CCA282495297600FD1BB3 /* main.m */; };
+		493CCA332495297700FD1BB3 /* RTDeepLightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 493CCA322495297700FD1BB3 /* RTDeepLightTests.m */; };
+		493CCA3E2495297700FD1BB3 /* RTDeepLightUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 493CCA3D2495297700FD1BB3 /* RTDeepLightUITests.m */; };
+		49825D2024FF7AFC004DD619 /* reedsolo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49825D1E24FF7AFC004DD619 /* reedsolo.cpp */; };
+		499EAE0A24979F97006FC66A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 499EAE0924979F97006FC66A /* Accelerate.framework */; };
+		499EAE0C2497AE3C006FC66A /* screennet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 499EAE0B2497AE3C006FC66A /* screennet.mlmodel */; };
+		49BEC56424952B01004A01DA /* CaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BEC56224952B01004A01DA /* CaptureManager.m */; };
+		49D8D07C249555380007F55E /* InceptionV1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 49D8D07B249555380007F55E /* InceptionV1.mlmodel */; };
+		49D8D07F249555D20007F55E /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D8D07E249555D20007F55E /* CoreML.framework */; };
+		49D8D081249610E60007F55E /* deeplight.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 49D8D080249610E60007F55E /* deeplight.mlmodel */; };
+		49D8D083249644610007F55E /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D8D082249644610007F55E /* opencv2.framework */; };
+		49D8D086249650EA0007F55E /* RTProcessing.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D8D085249650EA0007F55E /* RTProcessing.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		493CCA2F2495297700FD1BB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 493CCA0B2495297000FD1BB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 493CCA122495297000FD1BB3;
+			remoteInfo = RTDeepLight;
+		};
+		493CCA3A2495297700FD1BB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 493CCA0B2495297000FD1BB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 493CCA122495297000FD1BB3;
+			remoteInfo = RTDeepLight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		493CCA132495297000FD1BB3 /* RTDeepLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTDeepLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		493CCA162495297000FD1BB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		493CCA172495297000FD1BB3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		493CCA192495297000FD1BB3 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		493CCA1A2495297000FD1BB3 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		493CCA1C2495297000FD1BB3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		493CCA1D2495297000FD1BB3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		493CCA202495297000FD1BB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		493CCA222495297600FD1BB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		493CCA252495297600FD1BB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		493CCA272495297600FD1BB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		493CCA282495297600FD1BB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		493CCA2E2495297700FD1BB3 /* RTDeepLightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RTDeepLightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		493CCA322495297700FD1BB3 /* RTDeepLightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTDeepLightTests.m; sourceTree = "<group>"; };
+		493CCA342495297700FD1BB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		493CCA392495297700FD1BB3 /* RTDeepLightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RTDeepLightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		493CCA3D2495297700FD1BB3 /* RTDeepLightUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTDeepLightUITests.m; sourceTree = "<group>"; };
+		493CCA3F2495297700FD1BB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49825D1E24FF7AFC004DD619 /* reedsolo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = reedsolo.cpp; sourceTree = "<group>"; };
+		49825D1F24FF7AFC004DD619 /* reedsolo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reedsolo.h; sourceTree = "<group>"; };
+		499EAE0924979F97006FC66A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		499EAE0B2497AE3C006FC66A /* screennet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = screennet.mlmodel; path = Models/screennet.mlmodel; sourceTree = "<group>"; };
+		49BEC56224952B01004A01DA /* CaptureManager.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = CaptureManager.m; sourceTree = "<group>"; };
+		49BEC56324952B01004A01DA /* CaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureManager.h; sourceTree = "<group>"; };
+		49D8D07B249555380007F55E /* InceptionV1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = InceptionV1.mlmodel; path = Models/InceptionV1.mlmodel; sourceTree = "<group>"; };
+		49D8D07E249555D20007F55E /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
+		49D8D080249610E60007F55E /* deeplight.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = deeplight.mlmodel; path = Models/deeplight.mlmodel; sourceTree = "<group>"; };
+		49D8D082249644610007F55E /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = RTDeepLight/opencv2.framework; sourceTree = "<group>"; };
+		49D8D084249645A30007F55E /* RTDeepLight.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTDeepLight.pch; sourceTree = "<group>"; };
+		49D8D085249650EA0007F55E /* RTProcessing.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = RTProcessing.m; sourceTree = "<group>"; };
+		49D8D0872496514F0007F55E /* RTProcessing.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = RTProcessing.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		493CCA102495297000FD1BB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				499EAE0A24979F97006FC66A /* Accelerate.framework in Frameworks */,
+				49D8D083249644610007F55E /* opencv2.framework in Frameworks */,
+				49D8D07F249555D20007F55E /* CoreML.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		493CCA2B2495297700FD1BB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		493CCA362495297700FD1BB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		493CCA0A2495297000FD1BB3 = {
+			isa = PBXGroup;
+			children = (
+				493CCA152495297000FD1BB3 /* RTDeepLight */,
+				493CCA312495297700FD1BB3 /* RTDeepLightTests */,
+				493CCA3C2495297700FD1BB3 /* RTDeepLightUITests */,
+				493CCA142495297000FD1BB3 /* Products */,
+				49D8D07D249555D20007F55E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		493CCA142495297000FD1BB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				493CCA132495297000FD1BB3 /* RTDeepLight.app */,
+				493CCA2E2495297700FD1BB3 /* RTDeepLightTests.xctest */,
+				493CCA392495297700FD1BB3 /* RTDeepLightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		493CCA152495297000FD1BB3 /* RTDeepLight */ = {
+			isa = PBXGroup;
+			children = (
+				49825D1E24FF7AFC004DD619 /* reedsolo.cpp */,
+				49825D1F24FF7AFC004DD619 /* reedsolo.h */,
+				499EAE0B2497AE3C006FC66A /* screennet.mlmodel */,
+				49D8D0872496514F0007F55E /* RTProcessing.h */,
+				49D8D085249650EA0007F55E /* RTProcessing.m */,
+				49D8D084249645A30007F55E /* RTDeepLight.pch */,
+				49D8D080249610E60007F55E /* deeplight.mlmodel */,
+				49D8D07B249555380007F55E /* InceptionV1.mlmodel */,
+				49BEC56324952B01004A01DA /* CaptureManager.h */,
+				49BEC56224952B01004A01DA /* CaptureManager.m */,
+				493CCA162495297000FD1BB3 /* AppDelegate.h */,
+				493CCA172495297000FD1BB3 /* AppDelegate.m */,
+				493CCA192495297000FD1BB3 /* SceneDelegate.h */,
+				493CCA1A2495297000FD1BB3 /* SceneDelegate.m */,
+				493CCA1C2495297000FD1BB3 /* ViewController.h */,
+				493CCA1D2495297000FD1BB3 /* ViewController.m */,
+				493CCA1F2495297000FD1BB3 /* Main.storyboard */,
+				493CCA222495297600FD1BB3 /* Assets.xcassets */,
+				493CCA242495297600FD1BB3 /* LaunchScreen.storyboard */,
+				493CCA272495297600FD1BB3 /* Info.plist */,
+				493CCA282495297600FD1BB3 /* main.m */,
+			);
+			path = RTDeepLight;
+			sourceTree = "<group>";
+		};
+		493CCA312495297700FD1BB3 /* RTDeepLightTests */ = {
+			isa = PBXGroup;
+			children = (
+				493CCA322495297700FD1BB3 /* RTDeepLightTests.m */,
+				493CCA342495297700FD1BB3 /* Info.plist */,
+			);
+			path = RTDeepLightTests;
+			sourceTree = "<group>";
+		};
+		493CCA3C2495297700FD1BB3 /* RTDeepLightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				493CCA3D2495297700FD1BB3 /* RTDeepLightUITests.m */,
+				493CCA3F2495297700FD1BB3 /* Info.plist */,
+			);
+			path = RTDeepLightUITests;
+			sourceTree = "<group>";
+		};
+		49D8D07D249555D20007F55E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				499EAE0924979F97006FC66A /* Accelerate.framework */,
+				49D8D082249644610007F55E /* opencv2.framework */,
+				49D8D07E249555D20007F55E /* CoreML.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		493CCA122495297000FD1BB3 /* RTDeepLight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 493CCA422495297700FD1BB3 /* Build configuration list for PBXNativeTarget "RTDeepLight" */;
+			buildPhases = (
+				493CCA0F2495297000FD1BB3 /* Sources */,
+				493CCA102495297000FD1BB3 /* Frameworks */,
+				493CCA112495297000FD1BB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RTDeepLight;
+			productName = RTDeepLight;
+			productReference = 493CCA132495297000FD1BB3 /* RTDeepLight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		493CCA2D2495297700FD1BB3 /* RTDeepLightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 493CCA452495297700FD1BB3 /* Build configuration list for PBXNativeTarget "RTDeepLightTests" */;
+			buildPhases = (
+				493CCA2A2495297700FD1BB3 /* Sources */,
+				493CCA2B2495297700FD1BB3 /* Frameworks */,
+				493CCA2C2495297700FD1BB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				493CCA302495297700FD1BB3 /* PBXTargetDependency */,
+			);
+			name = RTDeepLightTests;
+			productName = RTDeepLightTests;
+			productReference = 493CCA2E2495297700FD1BB3 /* RTDeepLightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		493CCA382495297700FD1BB3 /* RTDeepLightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 493CCA482495297700FD1BB3 /* Build configuration list for PBXNativeTarget "RTDeepLightUITests" */;
+			buildPhases = (
+				493CCA352495297700FD1BB3 /* Sources */,
+				493CCA362495297700FD1BB3 /* Frameworks */,
+				493CCA372495297700FD1BB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				493CCA3B2495297700FD1BB3 /* PBXTargetDependency */,
+			);
+			name = RTDeepLightUITests;
+			productName = RTDeepLightUITests;
+			productReference = 493CCA392495297700FD1BB3 /* RTDeepLightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		493CCA0B2495297000FD1BB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Vu Tran";
+				TargetAttributes = {
+					493CCA122495297000FD1BB3 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					493CCA2D2495297700FD1BB3 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 493CCA122495297000FD1BB3;
+					};
+					493CCA382495297700FD1BB3 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 493CCA122495297000FD1BB3;
+					};
+				};
+			};
+			buildConfigurationList = 493CCA0E2495297000FD1BB3 /* Build configuration list for PBXProject "RTDeepLight" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 493CCA0A2495297000FD1BB3;
+			productRefGroup = 493CCA142495297000FD1BB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				493CCA122495297000FD1BB3 /* RTDeepLight */,
+				493CCA2D2495297700FD1BB3 /* RTDeepLightTests */,
+				493CCA382495297700FD1BB3 /* RTDeepLightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		493CCA112495297000FD1BB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493CCA262495297600FD1BB3 /* LaunchScreen.storyboard in Resources */,
+				493CCA232495297600FD1BB3 /* Assets.xcassets in Resources */,
+				493CCA212495297000FD1BB3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		493CCA2C2495297700FD1BB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		493CCA372495297700FD1BB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		493CCA0F2495297000FD1BB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493CCA1E2495297000FD1BB3 /* ViewController.m in Sources */,
+				493CCA182495297000FD1BB3 /* AppDelegate.m in Sources */,
+				49D8D081249610E60007F55E /* deeplight.mlmodel in Sources */,
+				49BEC56424952B01004A01DA /* CaptureManager.m in Sources */,
+				49825D2024FF7AFC004DD619 /* reedsolo.cpp in Sources */,
+				49D8D086249650EA0007F55E /* RTProcessing.m in Sources */,
+				499EAE0C2497AE3C006FC66A /* screennet.mlmodel in Sources */,
+				49D8D07C249555380007F55E /* InceptionV1.mlmodel in Sources */,
+				493CCA292495297600FD1BB3 /* main.m in Sources */,
+				493CCA1B2495297000FD1BB3 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		493CCA2A2495297700FD1BB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493CCA332495297700FD1BB3 /* RTDeepLightTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		493CCA352495297700FD1BB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493CCA3E2495297700FD1BB3 /* RTDeepLightUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		493CCA302495297700FD1BB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 493CCA122495297000FD1BB3 /* RTDeepLight */;
+			targetProxy = 493CCA2F2495297700FD1BB3 /* PBXContainerItemProxy */;
+		};
+		493CCA3B2495297700FD1BB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 493CCA122495297000FD1BB3 /* RTDeepLight */;
+			targetProxy = 493CCA3A2495297700FD1BB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		493CCA1F2495297000FD1BB3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				493CCA202495297000FD1BB3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		493CCA242495297600FD1BB3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				493CCA252495297600FD1BB3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		493CCA402495297700FD1BB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		493CCA412495297700FD1BB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		493CCA432495297700FD1BB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				COREML_CODEGEN_LANGUAGE = "Objective-C";
+				COREML_CODEGEN_SWIFT_GLOBAL_MODULE = YES;
+				DEVELOPMENT_TEAM = 6X828BBGYL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RTDeepLight",
+				);
+				INFOPLIST_FILE = RTDeepLight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vutran.RTDeepLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		493CCA442495297700FD1BB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				COREML_CODEGEN_LANGUAGE = "Objective-C";
+				COREML_CODEGEN_SWIFT_GLOBAL_MODULE = YES;
+				DEVELOPMENT_TEAM = 6X828BBGYL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RTDeepLight",
+				);
+				INFOPLIST_FILE = RTDeepLight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vutran.RTDeepLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		493CCA462495297700FD1BB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y69XQQX4NU;
+				INFOPLIST_FILE = RTDeepLightTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vutran.RTDeepLightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RTDeepLight.app/RTDeepLight";
+			};
+			name = Debug;
+		};
+		493CCA472495297700FD1BB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y69XQQX4NU;
+				INFOPLIST_FILE = RTDeepLightTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vutran.RTDeepLightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RTDeepLight.app/RTDeepLight";
+			};
+			name = Release;
+		};
+		493CCA492495297700FD1BB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y69XQQX4NU;
+				INFOPLIST_FILE = RTDeepLightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vutran.RTDeepLightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RTDeepLight;
+			};
+			name = Debug;
+		};
+		493CCA4A2495297700FD1BB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y69XQQX4NU;
+				INFOPLIST_FILE = RTDeepLightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vutran.RTDeepLightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RTDeepLight;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		493CCA0E2495297000FD1BB3 /* Build configuration list for PBXProject "RTDeepLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				493CCA402495297700FD1BB3 /* Debug */,
+				493CCA412495297700FD1BB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		493CCA422495297700FD1BB3 /* Build configuration list for PBXNativeTarget "RTDeepLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				493CCA432495297700FD1BB3 /* Debug */,
+				493CCA442495297700FD1BB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		493CCA452495297700FD1BB3 /* Build configuration list for PBXNativeTarget "RTDeepLightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				493CCA462495297700FD1BB3 /* Debug */,
+				493CCA472495297700FD1BB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		493CCA482495297700FD1BB3 /* Build configuration list for PBXNativeTarget "RTDeepLightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				493CCA492495297700FD1BB3 /* Debug */,
+				493CCA4A2495297700FD1BB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 493CCA0B2495297000FD1BB3 /* Project object */;
+}
