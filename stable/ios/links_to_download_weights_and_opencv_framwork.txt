@@ -1,0 +1,16 @@
+Download the OpenCV framework at the following URL, and place it in the project folder (in the same folder with main.m):
+
+https://drive.google.com/drive/folders/1LoKapJA-MJjv4472Una_8N0QwI5HmTph?usp=sharing
+
+Download the weight files (in CoreML) format for LightNet and ScreenNet at the following URL, and put them in "Models" folder in the Xcode project:
+
+https://drive.google.com/drive/folders/1W1UFW-pOHX1KfN7ZTjEzCdCzvLP2vx34?usp=sharing
+
+To run the code in an iPhone using a pre-recorded video, download the test videos at the following URL, and drag the file to the OLDeepLight App (on the iPhone) using the file sharing Tab in Finder (on MacOS):
+
+https://drive.google.com/drive/folders/1kmif3tUZfqG5S2NNanDKHsHADN__pjS1?usp=sharing
+
+Press "Next" button to run 100 frames and displays the decoded text in the debug terminal
+
+The other buttons are used to start and stop the continuous running mode to measure power consumption only.
+
