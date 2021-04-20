@@ -80,7 +80,7 @@ Or create new one using genDeepLight.py:
 
 $ python genDeepLight.py input_data input_video_name output_video_name num_frame
 
-Please use a G-Sync monitor and an Nvidia GPU to display videos, using a G-Sync capable video player, to avoid screen tearing effect. We developed a simple OpenGL video player that support G-Sync and play videos at fixed display rate. Set the display rate at a fixed value of 60FPS when using out OpenGL player. The software can be found at "utils/mem2screen" (run the software and press SPACE to start)
+Please use a G-Sync monitor and an Nvidia GPU to display videos, using a G-Sync capable video player, to avoid screen tearing effect. We developed a simple OpenGL video player that support G-Sync and play videos at fixed display rate. Set the display rate at a fixed value of 60FPS when using our OpenGL player. The software can be found at "utils/mem2screen" (run the software and press SPACE to start)
 
 $ run.sh video_name start_frame_index
 
