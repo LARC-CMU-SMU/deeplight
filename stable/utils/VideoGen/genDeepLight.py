@@ -73,7 +73,7 @@ seq_num = 0
 videoin = cv2.VideoCapture(sys.argv[2])
 frame_count = int(videoin.get(cv2.CAP_PROP_FRAME_COUNT))
 print("Frame count: " + str(frame_count))
-if (".AVI" not in sys.argv[3]) or (".avi" not in sys.argv[3]):
+if not((".AVI" in sys.argv[3]) or (".avi" in sys.argv[3])):
     print("Output file should be .AVI to avoid inter-frame compression")
     exit(0)
 videoout = cv2.VideoWriter(sys.argv[3],cv2.VideoWriter_fourcc('M','J','P','G'),60,(WIDTH,HEIGHT))
