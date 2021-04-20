@@ -70,7 +70,7 @@ papameters:
 -n: number of frame to run (provide -1 to run all frames in the input video). 
 
 
-### Video playing and recording
+### Generating, playing and recording DeepLight videos
 
 If you want to record new videos, you can use one of our pre-encoded (Alice in Wonder Land) from the following URL:
 
