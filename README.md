@@ -14,6 +14,29 @@ DeepLight's objective is to enable Screen-Camera Communication in real-world con
 
 In this project, we implement DeepLight in both offline (using python) and real-time (using Objective-C for iPhone) modes. For the offline mode, we use Keras and Tensorflow to implement the neural network. For the real-time mode, we port the code into Objective-C and C++. We use the CoreML framework to execute the neural networks and use the OpenCV framework for typical image processing tasks.
 
+## Dataset:
+
+If you want to train the networks, please download the following datasets, including (1) fixedfull1010.npz, (2) handfull1010.npz for LightNet, and (3) scrdetfull.npz for ScreenNet.
+
+https://drive.google.com/drive/folders/1vz-zp5GM9gRHa7fxr6o8LQ3HQJeUW2Kv?usp=sharing
+
+LightNet: 
+
+dataset = np.load("fixedfull1010.npz")
+
+data = dataset['X'] #22500 3-blue-frame stacks with arbitrary, artificial screen extraction errors; size = 299x299; 25200 frames for handfull1010.npz
+
+bits = dataset['Y'] #22500 10x10 array of corresponding bit values
+
+ScreenNet:
+
+dataset = np.load("fixedfull1010.npz")
+
+data = dataset['X'] #256x256 color frames
+
+corners = dataset['Y'] #8-element arrays: [lefttop_x, lefttop_y, righttop_x, righttop_y, rightbottom_x, rightbottom_y, leftbottom_x, leftbottom_y]
+
+
 ## Code structure
 
 ### OFFLINE MODE: stable/python
@@ -72,7 +95,7 @@ B. To run DeepLight in REAL-TIME mode, first you need a G-Sync monitor and an Nv
 
 Download the following pre-encoded video (Alice in Wonderland), and use a G-Sync capable video player to play the video (we used own own OpenGL player but it cannot play long videos):
 
-
+https://drive.google.com/drive/folders/1BaJcClkGICoeKe7susaYlq2nGreIpUiD?usp=sharing
 
 (1) Start the iOS App RTDeepLight and wait about 15 seconds for it to initialize buffers. 
 
