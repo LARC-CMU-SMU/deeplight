@@ -22,19 +22,19 @@ https://drive.google.com/drive/folders/1vz-zp5GM9gRHa7fxr6o8LQ3HQJeUW2Kv?usp=sha
 
 LightNet: 
 
-dataset = np.load("fixedfull1010.npz")
+$ dataset = np.load("fixedfull1010.npz")
 
-data = dataset['X'] #22500 3-blue-frame stacks with arbitrary, artificial screen extraction errors; size = 299x299; 25200 frames for handfull1010.npz
+$ data = dataset['X'] #22500 3-blue-frame stacks with arbitrary, artificial screen extraction errors; size = 299x299; 25200 frames for handfull1010.npz
 
-bits = dataset['Y'] #22500 10x10 array of corresponding bit values
+$ bits = dataset['Y'] #22500 10x10 array of corresponding bit values
 
 ScreenNet:
 
-dataset = np.load("fixedfull1010.npz")
+$ dataset = np.load("fixedfull1010.npz")
 
-data = dataset['X'] #256x256 color frames
+$ data = dataset['X'] #256x256 color frames
 
-corners = dataset['Y'] #8-element arrays: [lefttop_x, lefttop_y, righttop_x, righttop_y, rightbottom_x, rightbottom_y, leftbottom_x, leftbottom_y]
+$ corners = dataset['Y'] #8-element arrays: [lefttop_x, lefttop_y, righttop_x, righttop_y, rightbottom_x, rightbottom_y, leftbottom_x, leftbottom_y]
 
 
 ## Code structure
@@ -51,7 +51,7 @@ https://drive.google.com/drive/folders/1kmif3tUZfqG5S2NNanDKHsHADN__pjS1?usp=sha
 
 Run the following command to test:
 
-python deeplight.py -v test/fixed_alice.avi -ltn weights/LightNet.h5 -scn weights/ScreenNet.json -t 4 -d log -o 0 -n -1
+$ python deeplight.py -v test/fixed_alice.avi -ltn weights/LightNet.h5 -scn weights/ScreenNet.json -t 4 -d log -o 0 -n -1
 
 papameters:
 
