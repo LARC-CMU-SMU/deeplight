@@ -53,7 +53,7 @@ https://drive.google.com/drive/folders/1kmif3tUZfqG5S2NNanDKHsHADN__pjS1?usp=sha
 
 The hand_realtime.avi was recorded from the buffer in the real-time IOS App, so it contains only around 100 frames, and thus better to be tested on OLDeepLight app. Run the following command to decode the video:
 
-$ python deeplight.py -v test/fixed_alice.avi -ltn weights/LightNet.h5 -scn weights/ScreenNet.json -t 4 -d log -o 0 -n -1
+$ python deeplight.py -v test/fixed_alice.avi -ltn weights/LightNet.h5 -scn weights/ScreenNet.json -t 4 -d log -o 1 -n -1
 
 papameters:
 
