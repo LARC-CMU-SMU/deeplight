@@ -1,0 +1,21 @@
+pass desktop: deepcode123
+pass iphone: 123456
+
+Đặt iphone trên tripod, có cái holder trên đó
+Chuyển sang terminal mem2screen (đã mở sẵn)
+
+1. $mem2screen ./run_c_1.sh
+2. Mở phần mềm DeepCode app trên iphone
+3. Chờ màn hình máy tính chuyển thành màu đỏ
+4. Nhấn nút có số 120
+5. Nhấn nút AF để fix focus và exposure (nút AF chuyển thành màu đỏ)
+6. Nhấn nút Rec (sau dó chuyển thành "Stop", không nhấn stop nha)
+7. Nhấn phím "Space" trên máy tính để bắt đầu video
+7. Ra ngoài chơi, 2p sau quay lại
+8. Nhấn nút Stop (lúc trước là Rec)
+9. Nhấn phím 'Q' trên bàn phím máy tính để tắt 
+10. Cắm iphone vào máy tính 
+11. Copy record.mov và record.ts từ iphone vào mem2screen/2019-08-11/iphone-deepcode/run_1
+
+
+tương tự cho run_c_2.sh, run_c_3.sh và run_c_4.sh
