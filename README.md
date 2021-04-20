@@ -16,7 +16,8 @@ In this project, we implement DeepLight in both offline (using python) and real-
 
 ## Code structure
 
-OFFLINE MODE: stable/python
+### OFFLINE MODE: stable/python
+
 Download the weights files for LightNet and ScreenNet at the following URL, and put the files in "weights" folder:
 
 https://drive.google.com/drive/folders/1pkz3prKmwAsPRFtsS6NHyeCVZXAQV4c2?usp=sharing
@@ -26,16 +27,27 @@ Download the test files at the following URL, and put the files in "test" folder
 https://drive.google.com/drive/folders/1kmif3tUZfqG5S2NNanDKHsHADN__pjS1?usp=sharing
 
 Run the following command to test:
+
 python deeplight.py -v test/fixed_alice.avi -ltn weights/LightNet.h5 -scn weights/ScreenNet.json -t 4 -d log -o 0 -n -1
+
 -v: input video
+
 -ltn: weight file for LightNet
+
 -scn: weight file for ScreenNet
+
 -t: screen detection interval (run ScreenNet intermittently)
+
 -d: log file name
+
 -o: output type: 1 - print decoded text; 0 - record binary data in log.txt. The extracted screens are always recorded in log.avi
+
 -n: number of frame to run (provide -1 to run all frames in the input video). 
 
-REAL-TIME & OFFLINE MOBILE MODE: stable/ios
+
+
+### REAL-TIME & OFFLINE MOBILE MODE: stable/ios
+
 Download the OpenCV framework at the following URL, and place it in the project folder (in the same folder with main.m):
 
 https://drive.google.com/drive/folders/1LoKapJA-MJjv4472Una_8N0QwI5HmTph?usp=sharing
