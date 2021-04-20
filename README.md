@@ -86,7 +86,9 @@ $ python genDeepLight.py alice.npy original.mp4 test.avi 500
 
 Please use a G-Sync monitor and an Nvidia GPU to display videos, using a G-Sync capable video player, to avoid screen tearing effect. We developed a simple OpenGL video player that support G-Sync and play videos at fixed display rate. Set the display rate at a fixed value of 60FPS when using our OpenGL player. The software can be found at "utils/mem2screen" (run the software and press SPACE to start)
 
-$ run.sh video_name start_frame_index
+$ make
+
+$ ./mem2screen video_name start_frame_index
 
 To record a video for post-processing, make sure the video is recorded with MJPG encoder at 120FPS (do NOT use compression, or at least use the highest quality factor. Do not use inter-frame compression format such as MP4 as it mixes consecutive frames and damage our subtle Manchester encoding). We developed a Recorder App for IOS that can record high quality video with MJPG encoder. The App can be found at "utils/Recorder". To record:
 
