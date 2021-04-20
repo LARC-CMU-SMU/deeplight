@@ -74,7 +74,7 @@ papameters:
 
 ### Generating, playing and recording DeepLight videos
 
-Requirements: OpenCV, Numpy, OpenGL (for OpenGL video player)
+Requirements: OpenCV, Numpy, OpenGL (for OpenGL video player), libxnvctrl-dev (for G-Sync)
 
 If you want to record new videos, you can use one of our pre-encoded (Alice in Wonder Land) from the following URL:
 
