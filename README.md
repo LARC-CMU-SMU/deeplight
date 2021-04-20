@@ -131,7 +131,7 @@ https://drive.google.com/drive/folders/1BaJcClkGICoeKe7susaYlq2nGreIpUiD?usp=sha
 
 (4) Press "GO" button to start the process. 
 
-(5) Now whenever you press the record button (the Round one), it will process the previous 32 frames and show the result on the screen. The screen corners will be updaed as well. Note that the result is the text from 32 frames right after the previous session, not the current frames. You can feel how fast it process the data.
+(5) Now whenever you press the RECORD button (the Round one), it will process the previous 32 frames and show the result on the screen. The screen corners will be updaed as well. Note that the result is the text from 32 frames right after the previous session, not the current frames. You can feel how fast it process the data.
 
 
 # Cite
