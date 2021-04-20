@@ -41,6 +41,8 @@ $ corners = dataset['Y'] #8-element arrays: [lefttop_x, lefttop_y, righttop_x, r
 
 ### OFFLINE MODE: stable/python
 
+Requirements: OpenCV, Numpy, Scipy, Keras, Tensorflow
+
 Download the weights files for LightNet and ScreenNet at the following URL, and put the files in "weights" folder (if not exist, create one in "python" folder):
 
 https://drive.google.com/drive/folders/1pkz3prKmwAsPRFtsS6NHyeCVZXAQV4c2?usp=sharing
@@ -72,6 +74,8 @@ papameters:
 
 ### Generating, playing and recording DeepLight videos
 
+Requirements: OpenCV, Numpy, OpenGL (for OpenGL video player)
+
 If you want to record new videos, you can use one of our pre-encoded (Alice in Wonder Land) from the following URL:
 
 https://drive.google.com/drive/folders/1BaJcClkGICoeKe7susaYlq2nGreIpUiD?usp=sharing
@@ -96,6 +100,8 @@ To record a video for post-processing, make sure the video is recorded with MJPG
 
 
 ### REAL-TIME & OFFLINE MOBILE MODE: stable/ios (Tested on iPhone 11 Pro and iPhone 12)
+
+Requirements: To use the IOS App, you need Xcode and a developer account (a free account is enough).
 
 Download the OpenCV framework at the following URL, and place it in the project folder (in the same folder with main.m):
 
