@@ -70,6 +70,22 @@ papameters:
 -n: number of frame to run (provide -1 to run all frames in the input video). 
 
 
+### Video playing and recording
+
+If you want to record new videos, you can use one of our pre-encoded (Alice in Wonder Land) from the following URL:
+
+https://drive.google.com/drive/folders/1BaJcClkGICoeKe7susaYlq2nGreIpUiD?usp=sharing
+
+Or create new one using genDeepLight.py:
+
+$ python genDeepLight.py input_data input_video_name output_video_name num_frame
+
+Please use a G-Sync monitor and an Nvidia GPU to display videos, using a G-Sync capable video player, to avoid screen tearing effect. We developed a simple OpenGL video player that support G-Sync and play videos at fixed display rate. Set the display rate at a fixed value of 60FPS when using out OpenGL player. The software can be found at "utils/mem2screen"
+
+$ run.sh video_name start_frame_index
+
+To record a video for post-processing, make sure the video is recorded with MJPG encoder at 120FPS (do NOT use compression, or at least use the highest quality factor. Do not use inter-frame compression format such as MP4 as it mixes consecutive frames and damage our subtle Manchester encoding). We developed a Recorder App for IOS that can record high quality video with MJPG encoder. The App can be found at "utils/Recorder"
+
 
 ### REAL-TIME & OFFLINE MOBILE MODE: stable/ios (Tested on iPhone 11 Pro and iPhone 12)
 
@@ -85,7 +101,7 @@ A. To run the code in an iPhone using a pre-recorded video (OFFLINE MOBLE MODE),
 
 https://drive.google.com/drive/folders/1kmif3tUZfqG5S2NNanDKHsHADN__pjS1?usp=sharing
 
-Remember to rename the file to hand.mov before copying it to the IOS App. Otherwise, please change the expected filename in the file ViewController.m in the OLDeepLight project
+Remember to rename the file to hand.mov before copying it to the IOS App. Otherwise, please change the expected filename in the file ViewController.m in the OLDeepLight project.
 
 Press "Next" button to run 100 frames and displays the decoded text in the debug terminal. It also prints out the total processing time of each component in the system.
 
