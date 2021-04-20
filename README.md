@@ -18,17 +18,19 @@ In this project, we implement DeepLight in both offline (using python) and real-
 
 ### OFFLINE MODE: stable/python
 
-Download the weights files for LightNet and ScreenNet at the following URL, and put the files in "weights" folder:
+Download the weights files for LightNet and ScreenNet at the following URL, and put the files in "weights" folder (if not exist, create one in "python" folder):
 
 https://drive.google.com/drive/folders/1pkz3prKmwAsPRFtsS6NHyeCVZXAQV4c2?usp=sharing
 
-Download the test files at the following URL, and put the files in "test" folder:
+Download the test files at the following URL, and put the files in "test" folder (if not exist, create one in "python" folder):
 
 https://drive.google.com/drive/folders/1kmif3tUZfqG5S2NNanDKHsHADN__pjS1?usp=sharing
 
 Run the following command to test:
 
 python deeplight.py -v test/fixed_alice.avi -ltn weights/LightNet.h5 -scn weights/ScreenNet.json -t 4 -d log -o 0 -n -1
+
+papameters:
 
 -v: input video
 
@@ -46,23 +48,41 @@ python deeplight.py -v test/fixed_alice.avi -ltn weights/LightNet.h5 -scn weight
 
 
 
-### REAL-TIME & OFFLINE MOBILE MODE: stable/ios
+### REAL-TIME & OFFLINE MOBILE MODE: stable/ios (Tested on iPhone 11 Pro and iPhone 12)
 
 Download the OpenCV framework at the following URL, and place it in the project folder (in the same folder with main.m):
 
 https://drive.google.com/drive/folders/1LoKapJA-MJjv4472Una_8N0QwI5HmTph?usp=sharing
 
-Download the weight files (in CoreML) format for LightNet and ScreenNet at the following URL, and put them in "Models" folder in the Xcode project:
+Download the weight files (in CoreML) format for LightNet and ScreenNet at the following URL, and put them in "Models" folder in the Xcode project (if not exist, create one in the project folder -- same level with main.m):
 
 https://drive.google.com/drive/folders/1W1UFW-pOHX1KfN7ZTjEzCdCzvLP2vx34?usp=sharing
 
-To run the code in an iPhone using a pre-recorded video, download the test videos at the following URL, and drag the file to the OLDeepLight App (on the iPhone) using the file sharing Tab in Finder (on MacOS):
+A. To run the code in an iPhone using a pre-recorded video (OFFLINE MOBLE MODE), download the test videos at the following URL, and drag the file to the OLDeepLight App (on the iPhone) using the file sharing Tab in Finder (on MacOS):
 
 https://drive.google.com/drive/folders/1kmif3tUZfqG5S2NNanDKHsHADN__pjS1?usp=sharing
 
-Press "Next" button to run 100 frames and displays the decoded text in the debug terminal
+Press "Next" button to run 100 frames and displays the decoded text in the debug terminal. It also prints out the total processing time of each component in the system.
 
 The other buttons are used to start and stop the continuous running mode to measure power consumption only.
+
+
+
+B. To run DeepLight in REAL-TIME mode, first you need a G-Sync monitor and an Nvidia GPU to avoid screen tearing effect (if screen tearing occurs, frames may be skipped or mixed, which will, of course, damage the manchester encoding scheme in the video)
+
+Download the following pre-encoded video (Alice in Wonderland), and use a G-Sync capable video player to play the video (we used own own OpenGL player but it cannot play long videos):
+
+
+
+(1) Start the iOS App RTDeepLight and wait about 15 seconds for it to initialize buffers. 
+
+(2) Seat yourself on a chair. 
+
+(3) Press "AF" button to fixed the focus. 
+
+(4) Press "GO" button to start the process. 
+
+(5) Now whenever you press the record button (the Round one), it will process the previous 32 frames and show the result on the screen. The screen corners will be updaed as well. Note that the result is the text from 32 frames right after the previous session, not the current frames. You can feel how fast it process the data.
 
 
 # Cite
