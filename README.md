@@ -85,6 +85,8 @@ A. To run the code in an iPhone using a pre-recorded video (OFFLINE MOBLE MODE),
 
 https://drive.google.com/drive/folders/1kmif3tUZfqG5S2NNanDKHsHADN__pjS1?usp=sharing
 
+Remember to rename the file to hand.mov before copying it to the IOS App. Otherwise, please change the expected filename in the file ViewController.m in the OLDeepLight project
+
 Press "Next" button to run 100 frames and displays the decoded text in the debug terminal. It also prints out the total processing time of each component in the system.
 
 The other buttons are used to start and stop the continuous running mode to measure power consumption only.
