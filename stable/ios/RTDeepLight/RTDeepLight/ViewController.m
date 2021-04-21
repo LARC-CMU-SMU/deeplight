@@ -93,7 +93,7 @@
     [self.btnRightTop setCenter:CGPointMake(width*(corners[2] - 960)/960/2.0 + width/2.0, raw_height*(corners[3] - 540)/540/2.0 + height/2.0)];
     [self.btnRightBottom setCenter:CGPointMake(width*(corners[4] - 960)/960/2.0 + width/2.0, raw_height*(corners[5] - 540)/540/2.0 + height/2.0)];
     [self.btnLeftBottom setCenter:CGPointMake(width*(corners[6] - 960)/960/2.0 + width/2.0, raw_height*(corners[7] - 540)/540/2.0 + height/2.0)];
-    NSLog(@"CACACCACACACA: %f, %f, %f, %f, %f, %f, %f, %f\n", self.btnLeftTop.frame.origin.x, self.btnLeftTop.frame.origin.y, self.btnRightTop.frame.origin.x, self.btnRightTop.frame.origin.y, self.btnRightBottom.frame.origin.x, self.btnRightBottom.frame.origin.y, self.btnLeftBottom.frame.origin.x, self.btnLeftBottom.frame.origin.y);
+    NSLog(@"======= Out Screen Corners =========: %f, %f, %f, %f, %f, %f, %f, %f\n", self.btnLeftTop.frame.origin.x, self.btnLeftTop.frame.origin.y, self.btnRightTop.frame.origin.x, self.btnRightTop.frame.origin.y, self.btnRightBottom.frame.origin.x, self.btnRightBottom.frame.origin.y, self.btnLeftBottom.frame.origin.x, self.btnLeftBottom.frame.origin.y);
 }
 
 - (void)updateResult:(NSString *)text {
