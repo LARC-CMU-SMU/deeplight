@@ -27,7 +27,6 @@
 		49E7C42724B1F4C400C179C0 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E7C42624B1F4C400C179C0 /* opencv2.framework */; };
 		49E7C42924B1F7DE00C179C0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E7C42824B1F7DE00C179C0 /* CoreMedia.framework */; };
 		49E7C42B24B1F82900C179C0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E7C42A24B1F82900C179C0 /* AVFoundation.framework */; };
-		49F9854524EC2053002A17EB /* iTracker.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 49F9854424EC2053002A17EB /* iTracker.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +78,6 @@
 		49E7C42624B1F4C400C179C0 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = OLDeepLight/opencv2.framework; sourceTree = "<group>"; };
 		49E7C42824B1F7DE00C179C0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		49E7C42A24B1F82900C179C0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		49F9854424EC2053002A17EB /* iTracker.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = iTracker.mlmodel; path = Models/iTracker.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +138,6 @@
 			children = (
 				49825D2224FF9185004DD619 /* reedsolo.cpp */,
 				49825D2124FF9184004DD619 /* reedsolo.h */,
-				49F9854424EC2053002A17EB /* iTracker.mlmodel */,
 				495F0AAC24E0E46E00C60E7F /* screennet.mlmodel */,
 				495F0AA824E0E1C600C60E7F /* deeplight.mlmodel */,
 				49E7C41F24B1EE3C00C179C0 /* Processing.h */,
@@ -330,7 +327,6 @@
 				49E7C3F624B1E65D00C179C0 /* main.m in Sources */,
 				49E7C3E824B1E65900C179C0 /* SceneDelegate.m in Sources */,
 				49E7C42124B1EE3C00C179C0 /* Processing.m in Sources */,
-				49F9854524EC2053002A17EB /* iTracker.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

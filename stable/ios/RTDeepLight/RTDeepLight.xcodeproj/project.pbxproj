@@ -20,7 +20,6 @@
 		499EAE0A24979F97006FC66A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 499EAE0924979F97006FC66A /* Accelerate.framework */; };
 		499EAE0C2497AE3C006FC66A /* screennet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 499EAE0B2497AE3C006FC66A /* screennet.mlmodel */; };
 		49BEC56424952B01004A01DA /* CaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BEC56224952B01004A01DA /* CaptureManager.m */; };
-		49D8D07C249555380007F55E /* InceptionV1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 49D8D07B249555380007F55E /* InceptionV1.mlmodel */; };
 		49D8D07F249555D20007F55E /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D8D07E249555D20007F55E /* CoreML.framework */; };
 		49D8D081249610E60007F55E /* deeplight.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 49D8D080249610E60007F55E /* deeplight.mlmodel */; };
 		49D8D083249644610007F55E /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D8D082249644610007F55E /* opencv2.framework */; };
@@ -69,7 +68,6 @@
 		499EAE0B2497AE3C006FC66A /* screennet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = screennet.mlmodel; path = Models/screennet.mlmodel; sourceTree = "<group>"; };
 		49BEC56224952B01004A01DA /* CaptureManager.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = CaptureManager.m; sourceTree = "<group>"; };
 		49BEC56324952B01004A01DA /* CaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureManager.h; sourceTree = "<group>"; };
-		49D8D07B249555380007F55E /* InceptionV1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = InceptionV1.mlmodel; path = Models/InceptionV1.mlmodel; sourceTree = "<group>"; };
 		49D8D07E249555D20007F55E /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
 		49D8D080249610E60007F55E /* deeplight.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = deeplight.mlmodel; path = Models/deeplight.mlmodel; sourceTree = "<group>"; };
 		49D8D082249644610007F55E /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = RTDeepLight/opencv2.framework; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 				49D8D085249650EA0007F55E /* RTProcessing.m */,
 				49D8D084249645A30007F55E /* RTDeepLight.pch */,
 				49D8D080249610E60007F55E /* deeplight.mlmodel */,
-				49D8D07B249555380007F55E /* InceptionV1.mlmodel */,
 				49BEC56324952B01004A01DA /* CaptureManager.h */,
 				49BEC56224952B01004A01DA /* CaptureManager.m */,
 				493CCA162495297000FD1BB3 /* AppDelegate.h */,
@@ -320,7 +317,6 @@
 				49825D2024FF7AFC004DD619 /* reedsolo.cpp in Sources */,
 				49D8D086249650EA0007F55E /* RTProcessing.m in Sources */,
 				499EAE0C2497AE3C006FC66A /* screennet.mlmodel in Sources */,
-				49D8D07C249555380007F55E /* InceptionV1.mlmodel in Sources */,
 				493CCA292495297600FD1BB3 /* main.m in Sources */,
 				493CCA1B2495297000FD1BB3 /* SceneDelegate.m in Sources */,
 			);
